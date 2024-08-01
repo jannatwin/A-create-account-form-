@@ -1,0 +1,111 @@
+*{
+margin: 0;
+font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+  background: url(bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ min-height: 100vh;
+ 
+
+}
+
+.container{
+   
+   width: 500px;
+   border-radius: 9px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.header{
+    background: none;
+    padding: 20px 40px;
+    color: rgb(205, 187, 161);
+    font-size: 23px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);;
+}
+.form{
+   padding: 30px 40px;
+
+}
+.control-form{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  
+}
+.control-form:hover{
+    transform: translateY(-9px);
+}
+.control-form label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color:black;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.control-form input{
+    border: 0.5px solid rgb(18, 16, 13);
+    border-radius: 6px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
+    font-family: 'Times New Roman', Times, serif;
+}
+.control-form ::placeholder{
+    color: #e0d1ac70;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+
+
+
+.control-form.success input{
+     border-color: #2ecc71;
+}
+.control-form small{
+    color: rgba(255, 0, 0, 0.567);
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.control-form.fail small{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.form button{
+    background-color:rgb(205, 187, 161);
+    border: none;
+    padding: 10px 90px;
+    font-size: 18px;
+    margin-left: 90px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
+}
+.form button:hover{
+   background-color: antiquewhite;
+   color: black;
+   transition: 0.3s;
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.9);
+}
